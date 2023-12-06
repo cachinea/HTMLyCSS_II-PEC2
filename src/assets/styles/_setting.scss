@@ -1,0 +1,43 @@
+/* Setting, se configuran los valores estándares que tiene el proyecto
+Colores */
+$color-primary:  #FF8E23;
+$color-secondary: #10B5AB;
+$color-light: #f8f8f8;
+$color-uoc: #020873;
+
+$text-color: #11392e;
+$text-light: #f8f8f8;
+
+/* Unidades */
+$unit-md: 1rem;
+$unit-s: (1rem * 0.9);
+$unit-l: (1rem  * 1.5);
+$unit-xl: (1rem * 2);
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+$font-family: 'Lato', 'Arial', sans-serif;
+$font-size-md: $unit-md;
+$font-size-xs: $unit-s;
+$font-size-l: $unit-l;
+$font-size-xl: $unit-xl;
+
+/* Unidades */
+$spacing-unit: 1rem;
+$padding-md: $unit-md;
+$padding-xl: $unit-xl;
+$margin-md: $unit-md;
+$margin-xs: (0.5 * $unit-md);
+$margin-xl: $unit-xl;
+
+/* Radios de borde */
+$radius-xs: 4px;
+$radius-md: 8px;
+
+/* Otras configuraciones globales, si las tienes */
+$primary: $color-primary;
+
+$theme-colors: (
+  "primary": $primary,
+);
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";

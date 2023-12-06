@@ -1,0 +1,28 @@
+/* Tools. Se añaden todas las herramientas (mixin, funciones, layout...) */
+@mixin transparent-header ($color) {
+  background-color: $color;
+}
+
+/* Layout en horizontal */
+.flex-h {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Layout en vertical */
+.flex-v {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Layout específico para el contenedor de cards */
+.flex-card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: $spacing-unit;
+}

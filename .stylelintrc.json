@@ -1,0 +1,19 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "ignoreFiles": [
+    "./src/assets/styles/main.css",
+    "./src/assets/styles/main.css.map"
+  ],
+  "rules": {
+    "indentation": 2,
+    "declaration-colon-newline-after": "always-multi-line",
+    "import-notation": null,
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["import", "extend", "mixin", "include"]
+    }],
+    "scss/at-rule-no-unknown": true
+  }
+}

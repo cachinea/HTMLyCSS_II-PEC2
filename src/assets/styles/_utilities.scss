@@ -1,0 +1,42 @@
+.home-page {
+  background-color: #ffddb3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  font-family: Lato, sans-serif;
+  margin: 0;
+
+  header {
+    @include transparent-header(transparent);
+
+    .header-container ul li a {
+      color: $text-color;
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+}
+
+/* Customizar clases sass */
+.card-img-top { 
+  height: 200px;
+  object-fit: cover;
+
+  @media screen and (max-width: 600px) {
+    height: 150px;
+  }
+}
+
+.col1 {
+  flex: 0.8;
+  align-self: flex-start;
+  margin-right: $margin-xl;
+}
+
+.col2 {
+  flex:1.2;
+}

@@ -5,22 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+
+    <title>League Pro Tennis</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+  <body class="home-page">
+    <include src="./views/header.html"></include>
+    <main class="poster">
+      <h1>League Pro Tennis</h1>
+      <div class="img-home-container">
+        <img src="./assets/images/portada.jpg" alt="Portada">
+      </div>
+      <h2>Bienvenidos a la Liga de Tenis del Vecindario</h2>
+      <p>¡Explora la emoción del tenis en nuestro vecindario! Nuestra liga de tenis ofrece una experiencia única para todos los amantes del deporte en la comunidad. Estamos comprometidos con la promoción de un ambiente amigable y competitivo donde los residentes pueden disfrutar del tenis y construir lazos de amistad.</p>
+    </main>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>

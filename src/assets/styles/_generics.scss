@@ -1,0 +1,78 @@
+/* Generics. Se diseñan los estilos de etiquetas y componentes generales */
+/* Textos */
+$heading-styles: (
+  h1: $font-size-xl,
+  h2: $font-size-l,
+);
+
+@each $heading, $size in $heading-styles {
+  #{$heading} {
+    font-weight: 800;
+    color: $text-color;
+    text-align: center;
+    margin: $margin-md;
+    font-size: $size;
+  }
+}
+
+p, a {
+  text-decoration: none;
+  font-size: $font-size-md;
+  color: $text-color;
+}
+
+a {
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+ul {
+  list-style: none;
+  li {
+    margin-bottom: $margin-xs;
+  }
+}
+
+/* Etiequetas */
+* {
+  font-family: $font-family;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: $font-family;
+  min-height: 100vh;
+  padding: $padding-md;
+}
+
+main {
+  margin: $margin-md;
+}
+
+.header, footer {
+  width: 100vw;
+  background-color: $color-primary;
+}
+
+form {
+  margin: $margin-xl;
+  padding: $padding-xl;
+}
+
+hr {
+  width: 75vh;
+  border: 1px solid $color-secondary;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
