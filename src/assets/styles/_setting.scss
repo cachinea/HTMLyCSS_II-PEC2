@@ -1,5 +1,6 @@
-/* Setting, se configuran los valores estándares que tiene el proyecto
-Colores */
+/* Setting, se configuran los valores estándares que tiene el proyecto */
+
+/* Colores */
 $color-primary:  #FF8E23;
 $color-secondary: #10B5AB;
 $color-light: #f8f8f8;
@@ -36,8 +37,17 @@ $radius-md: 8px;
 
 /* Otras configuraciones globales, si las tienes */
 $primary: $color-primary;
-
 $theme-colors: (
   "primary": $primary,
 );
+
+$enable-shadows: true;
+$enable-gradients: true;
+$btn-padding-y: $padding-md;
+$btn-padding-x: $padding-md;
+
+
+
+
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../../node_modules/bootstrap/scss/variables";
