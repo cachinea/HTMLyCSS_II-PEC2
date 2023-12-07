@@ -131,11 +131,11 @@
 
 .card-container {
   max-width: 1200px;
-  margin: $margin-xl;
+  margin: $margin-xl 0;
 
   .card {
-    width: 25vw;
-    min-width: 200px;
+    width: 25%;
+    min-width: 150px;
     max-width: 350px;
   }
 }

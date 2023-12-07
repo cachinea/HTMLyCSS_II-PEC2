@@ -10,7 +10,6 @@ $heading-styles: (
     font-weight: 800;
     color: $text-color;
     text-align: center;
-    margin: $margin-md;
     font-size: $size;
   }
 }
@@ -53,7 +52,7 @@ body {
 }
 
 main {
-  margin: $margin-md;
+  margin: $margin-md 0;
 }
 
 .header, footer {
@@ -67,8 +66,10 @@ form {
 }
 
 hr {
+  min-width: 80%;
   max-width: 75vh;
   border: 1px solid $color-secondary;
+  margin: 0 0 $margin-md 0;
 }
 
 img {
@@ -79,4 +80,8 @@ img {
 
 article {
   width: 100%;
+}
+
+section {
+  max-width: 750px;
 }

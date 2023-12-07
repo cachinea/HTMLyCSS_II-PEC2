@@ -27,6 +27,7 @@
   }
 }
 
+/* Especificos de Noticias */
 .col1 {
   flex: 0.8;
   align-self: flex-start;
@@ -34,5 +35,12 @@
 }
 
 .col2 {
-  flex:1.2;
+  flex: 1.2;
+}
+
+@media screen and (max-width: 600px) {
+  .col1, .col2 {
+    margin-right: 0;
+    text-align: justify;
+  }
 }
